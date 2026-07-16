@@ -124,3 +124,13 @@ h1 em,h2 em,h3 em{color:var(--gold-light);font-style:italic;font-weight:400}
 
 @media (max-width:440px){.hero__actions{align-items:flex-start;flex-direction:column}.hero__facts{flex-wrap:wrap}.product-card__image{height:29rem}.site-footer{grid-template-columns:1fr}.site-footer__brand,.site-footer__legal{grid-column:auto}.age-gate__actions{flex-direction:column}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marquee__track,.hero__mist{animation:none}.reveal{opacity:1;transform:none;transition:none}*,*::before,*::after{transition-duration:.01ms!important}}
+
+/* Легенди розміщені безпосередньо біля кожного напою */
+.product-card__legend{margin-top:1.35rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.product-card__legend summary{list-style:none;cursor:pointer;padding:1rem 0;display:flex;align-items:center;justify-content:space-between;color:var(--parchment);font-size:.7rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase}
+.product-card__legend summary::-webkit-details-marker{display:none}
+.product-card__legend summary::after{content:"+";color:var(--accent);font-family:var(--display);font-size:1.35rem;line-height:1;transition:transform .25s}
+.product-card__legend[open] summary::after{transform:rotate(45deg)}
+.product-card__legend-body{padding:0 0 1.25rem;color:#a6a89f;font-size:.9rem;line-height:1.65}
+.product-card__legend-body p{margin:0}
+.product-card__legend-body blockquote{margin:1rem 0 0;padding-left:1rem;border-left:1px solid var(--accent);font-family:var(--display);font-size:1.15rem;font-style:italic;color:#d8cfbd}
